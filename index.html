@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <center>
+    <h2>Fill in the Form</h2><br>
+    <form action="#" method="post">
+        <label for="first_name">First Name:</label><br>
+        <input type="text" id="first_name" name="first_name"><br>
+
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" id="last_name" name="last_name"><br>
+
+        <h3>Sex:</h3>
+        <div id="sex">
+            <input type="radio" id="male" name="sex" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="female">
+            <label for="female">Female</label><br><br>
+        </div>
+
+
+        <h2>What is your Strand in Senior High School?</h2>
+        <div id="whatisyourstrand">
+            <select id="what_your_strand" name="what_your_strand">
+                <option value="H.E" id="h.e">H.E</option>
+                <option value="ICT" id="ict">ICT</option>
+                <option value="HUMMS" id="humms">HUMMS</option>
+                <option value="GAS" id="gas">GAS</option>
+            </select><br><br>
+        </div>
+
+        <div id="birthmonth">
+            <label for="birth_month">In what month were you born?</label><br>
+            <input type="month" id="birth_month" name="birth_month"><br><br>
+        </div>
+
+        <div id="aboutme">
+            <label for="about_yourself"> Say something about yourself</label><br>
+            <textarea id="about_yourself" name="about_yourself" rows="10" cols="30"></textarea><br><br>
+        </div>
+
+        <button onclick="resetB()">Reset this form</button>
+        <button onclick="submitBtn()">Submit</button>
+    </form>
+
+
+<script src="main.js"></script>
+</center>
+</body>
+</html>
